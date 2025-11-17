@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gavarasana Bhavani - Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">GB</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <canvas id="particles-canvas"></canvas>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Hi, I'm <span class="highlight">Gavarasana Bhavani</span>
+            </h1>
+            <h2 class="hero-role">Web Developer</h2>
+            <p class="hero-tagline">Motivated MCA graduate passionate about building modern web applications and solving real-world problems.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" id="viewWorkBtn">
+                    <i class="fas fa-rocket"></i>
+                    View My Work
+                </button>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i>
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-avatar">
+                    <div class="avatar-container">
+                        <div class="avatar-glow"></div>
+                        <img src="/public/bhav.jpg" alt="Bhavani" class="avatar-image">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>Motivated MCA graduate with strong skills in full-stack development. I specialize in HTML, CSS, JavaScript, Java, Python, and databases like MongoDB and SQL. With a passion for creating seamless user experiences and performance optimization, I aim to deliver impactful digital solutions.</p>
+                    <p>When I'm not coding, I enjoy exploring AI tools, reading books, and learning new technologies to stay ahead in the tech world.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">1+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">Internships</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title"><i class="fas fa-code"></i> Frontend</h3>
+                    <div class="skills-list">
+                        <div class="skill-chip">HTML</div>
+                        <div class="skill-chip">CSS</div>
+                        <div class="skill-chip">JavaScript</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title"><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skills-list">
+                        <div class="skill-chip">Java</div>
+                        <div class="skill-chip">Python</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title"><i class="fas fa-database"></i> Databases</h3>
+                    <div class="skills-list">
+                        <div class="skill-chip">MongoDB</div>
+                        <div class="skill-chip">SQL</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title"><i class="fas fa-tools"></i> Tools</h3>
+                    <div class="skills-list">
+                        <div class="skill-chip">Git</div>
+                        <div class="skill-chip">GitHub</div>
+                        <div class="skill-chip">VS Code</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <!-- E-commerce Project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600" alt="E-commerce Website">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-commerce Shopping Website</h3>
+                        <p class="project-description">Built a dynamic platform with product listing, cart, filtering, and checkout functionalities. Implemented responsive layouts and animated product displays with real-time cart updates using JavaScript.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- To-Do App -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg?auto=compress&cs=tinysrgb&w=600" alt="To-Do App">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">To-Do Application</h3>
+                        <p class="project-description">A simple task management app where users can add, edit, and delete tasks. Built with local storage support to save data.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dice App -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/163064/play-stone-luck-game-163064.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Dice App">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Dice Game</h3>
+                        <p class="project-description">A fun dice-rolling game where users can roll dice and see random results. Helps practice DOM manipulation and JavaScript logic.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Internships</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Web Development Intern</div>
+                        <p class="timeline-description">Designed and developed responsive, user-friendly web pages using HTML, CSS, and JavaScript. Enhanced website functionality and ensured cross-browser compatibility.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Java Development Intern</div>
+                        <p class="timeline-description">Applied object-oriented principles to develop and test applications. Debugged and optimized code to improve performance and efficiency.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>gavarasanabhavani041@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 8247654820</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/bhavani-gavarasana-10444b2b0/" target="_blank">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder=" " required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder=" " required>
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder=" " required>
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder=" " rows="5" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                    <div class="form-success" id="formSuccess">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Message sent successfully! I'll get back to you soon.</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Gavarasana Bhavani. All rights reserved. Built with passion and modern web technologies.</p>
+                <button class="back-to-top" id="backToTop" title="Back to top">
+                    <i class="fas fa-arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
